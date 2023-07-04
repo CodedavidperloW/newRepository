@@ -1,0 +1,33 @@
+/* .red{
+    background-color: red;
+}
+
+.invisible{
+    display: none;
+}
+
+.big-button{
+    width: 10%;
+    height: 20px;
+    font-weight: bold;
+}
+
+
+
+.fadeout:hover{
+    animation: fadeout 2s;
+    animation-fill-mode: forwards;
+    color: blue;
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+} */
+    .bold:hover{
+        background-color:  blue;
+    }

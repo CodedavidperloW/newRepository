@@ -1,0 +1,141 @@
+*{box-sizing: border-box}
+
+
+body,html{  
+    margin:0px;
+    padding:0px;
+}
+
+
+.help{
+    position:absolute;
+    color:whitesmoke;
+    font-size: 26px;
+    top:0px;
+    right:50px;
+    text-shadow: 2px 4px 6px wheat;
+}
+
+.navbar > li{
+    display:inline-block;
+    height:50px;
+    margin-top: 30px;
+}
+/*I need help with setting my Nav Bar at the top of the page, there is always a small space a the top*/
+.navbar{background-color: rgb(50, 69, 193,.5);
+position:relative;
+top:-16px;
+width:100%;
+}
+
+
+
+a {position:relative;
+    margin-right: 22px;
+    letter-spacing: 1px;
+    font-family:fantasy;
+    color:orange;
+    left:880px;
+   }
+
+
+body{background-image: url(Rabbi_Ovadia_Yosef.jpg);
+background-repeat: no-repeat;
+background-size:100%;}
+
+.fa-scroll-torah{position:absolute;
+left:10px;
+top:10px;
+color:wheat;
+font-size: 100px;
+background-color: rgb(45, 36, 36, .5);
+border-radius: 12px;}
+
+h1{margin-left:1000px;
+    color:antiquewhite;
+}
+
+.bio{width:450px;
+margin-left:960px;
+padding:15px;
+font-size: 18px;
+color:antiquewhite;
+background-color:rgb(255, 218, 185, .2);
+border-radius: 18px;}
+/*
+Font size of the title
+on Medium devices (landscape tablets, 768px and up) : 25px
+on Small devices (portrait tablets and large phones, 600px and up): 35px
+Navbar background color
+Small devices : yellow and font color black
+Medium devices : lightgreen and font color black.
+Large devices (laptops/desktops, 992px and up) : red and font color white.
+Extra large devices (large laptops and desktops, 1200px and up) : black and font color white.
+Position of the text
+Large devices: the title is next to the paragraph.
+Small devices: the title is above the paragraph.
+}*/
+
+    /*small device*/
+@media all and (max-width:768px){
+    .navbar{background-color: yellow;
+        color:black;}
+    
+    h1 {font-size: 35px;
+    position:absolute;
+    top:110px;
+right:260px;
+padding:15px;
+background-color: rgb(0, 0, 0, .4);
+border-radius: 15px;
+}
+
+    .bio{position:absolute;
+    width:300px;
+        right:260px;
+        top:320px;
+font-size: 10px;
+background-color:rgb(0, 0, 0, .4);}}
+
+    /*medium device*/
+@media all and (min-width:769px){
+        h1{font-size: 25px;}
+    
+    .navbar{background-color: lightgreen;
+    color: black;
+position:relative;
+}}
+
+a {position:relative;
+    left:100px;
+    padding:0px;
+    margin:5px;
+    font-size: 10px;
+    }
+
+    h1 {font-size: 35px;
+        position:absolute;
+        top:310px;
+    right:600px;
+    padding:15px;
+    background-color: rgb(0, 0, 0, .4);
+    border-radius: 15px;
+    }
+    
+        .bio{position:absolute;
+        width:300px;
+            right:260px;
+            top:320px;
+    font-size: 10px;
+    background-color:rgb(0, 0, 0, .4);}
+
+    /*large device*/
+    @media all and (min-width:992px){
+        .navbar{background-color: red;
+        color:white;}}
+
+    /*extra large device*/
+@media all and (min-width:1200px){
+    .navbar{background-color:black;
+    color:white;}
+}

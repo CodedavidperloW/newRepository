@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Prayer App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="vid-container">
+            <video loop>
+                <source src="./Vids/rainHDbyJeanVanDerMeulenonPixabay.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+
+        <div class="time-select">
+            <button data-time="900">15 minutes</button>
+            <button data-time="2100">35 minutes</button>
+            <button data-time="3600">60 minutes</button>
+        </div>
+
+        <div class="player-container">
+            <audio class ="song">
+                <source src="Sounds/light-rain-ambient-114354.mp3">
+            </audio>
+            <img src="Pics/play-button-svgrepo-com.svg" alt="playbutton" class="play">
+
+            <svg 
+            class="track-outline"
+            width="453" 
+            height="453" 
+            viewBox="0 0 453 453" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <circle 
+            cx="226.5" 
+            cy="226.5" 
+            r="216.5" 
+            stroke="white" 
+            stroke-width="20"
+            />
+            </svg>
+            <svg 
+            class="moving-outline"
+            width="453" 
+            height="453" 
+            viewBox="0 0 453 453" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <circle 
+            cx="226.5" 
+            cy="226.5" 
+            r="216.5" 
+            stroke="blue" 
+            stroke-width="20"
+            />
+            </svg>
+            <h3 class="time-display">0:00</h3>
+        </div>
+
+
+        <div class="sound-picker">
+            <button data-sound="./Sounds/light-rain-ambient-114354.mp3" data-video="./Vids/HDRainbyrelaxing-guru-4757483-1920x1080-30fps.mp4">
+                <img src="./Pics/Rain-inge-maria-unsplash.jpg" alt="rain">
+            </button>
+            <button data-sound="./Sounds/forest-river-birds-recording-6735.mp3" data-video="./Vids/robinbyFedericoMadernoOnPixabay-21723.mp4">
+                <img src="./Pics/ForestRiver-paul-siewert-unsplash.jpg" alt="Forest and River">
+            </button>
+            <button data-sound="./Sounds/mixkit-sea-coast-breaking-waves-1206.wav" data-video="./Vids/seaHD-javier-lemus-2439510-1920x1080-30fps.mp4">
+                <img src="./Pics/oceanbyivan-bandura-unsplash.jpg" alt="waves">
+            </button>
+
+        
+        </div>
+    </div>
+
+    <div class="app2"></div>
+
+
+    <div class="app3"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

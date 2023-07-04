@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   /* background: pink;
+    /*how can I have a background color but then change
+    it based on a selection?*/
+}
+
+.time-select,
+.sound-picker,
+.player-container {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img.play{
+    height:25%;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+.player-container {
+    position: relative;
+}
+
+.player-container svg {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)rotate(-90deg)
+}
+
+svg.moving-outline{
+    border-radius: 50%;
+    opacity: .9;
+}
+
+/*The question here is why put the height,top, and left, and then do transform if with 
+position absolute it already looks fine.*/
+
+/*.time-select {
+    background: lightblue;
+}
+
+.sound-picker {
+    background-color: lightgreen;
+}*/
+
+.sound-picker img {
+    width: 350px;
+    height: 350px; 
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+/*.player-container {
+    background-color: rosybrown;
+
+}*/
+
+.time-display {
+    position: absolute;
+    color: black;
+    bottom: 10%;
+    color:black;
+    font-size: 88px;
+    background-color: rgb(223, 234, 22);
+    opacity: .1;
+    font-family: 'Acme', sans-serif;
+    opacity: .2;
+    border-radius: 50%;
+    padding:20px;
+    animation: time-display 5s ease infinite;
+}
+@keyframes time-display {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+
+
+video {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -10;
+}
+
+.time-select button,
+.sound-picker button {
+    color: black;
+    width: 30%;
+    height: 10%;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+}
+
+.time-select button{
+    height: 20%;
+    width: 40%;
+    border-radius: 45%;
+    font-weight: bold;
+    font-size: 200%;
+    opacity:.8;
+    border-color: 10px solid lightblue;
+    font-family:'Acme', sans-serif;
+}
+
+.time-select button:hover {
+    color: black;
+    background: white;
+    font-size: 50px;
+    opacity: .5;
+    /*add cool hover effect*/
+}
+
+.sound-picker button {
+    border: none;
+    height: 400px;
+    width: 420px;
+    margin:10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 4px solid gainsboro;
+    transition: .2s;
+}
+
+.sound-picker :hover {
+    transform: scale(1.1);
+    
+}
+
+.sound-picker button:nth-child(1) {
+    background: rgb(48, 136, 136);
+}
+
+.sound-picker button:nth-child(2) {
+    background: rgb(231, 112, 69);
+}
+
+.sound-picker button:nth-child(3) {
+    background: rgb(205, 251, 113);
+}

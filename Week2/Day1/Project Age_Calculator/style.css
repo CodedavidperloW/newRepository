@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(110, 212, 166);
+    font-family: 'Silkscreen', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    min-height: 100px;
+    width: 980px;
+    margin: 100px auto;
+    border-radius: 8px;
+    height: auto;
+    padding-top:0px;
+    padding-bottom:10px;
+    /*why do we add height auto*/
+}
+
+.base {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    /*what is overflow*/
+    display: block;
+    float: none;
+    /*why write float at all if it at none?*/
+}
+
+.base h4{
+    font-size: 26px;
+    text-align: center;
+    margin-top: 0px;
+    box-shadow: 0px 2px rgb(100, 181, 253); /*maybe add box shadow after*/
+    font-weight: normal; /*what exactly is normal*/
+    color: rgb(255, 165, 90);
+    text-shadow: 1px 1px grey;
+    background-color: beige;
+    padding: 5px;
+}
+
+.block{
+width: 135px;
+padding: 5px 20px;
+margin-left: 20px;
+display: inline-block;
+/*float: left;    consider adding if not good enough*/
+}
+
+.title{
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: rgb(168, 30, 244);
+    text-shadow: 1px 1px black;
+    /*word-spacing: 2px; not sure what this does*/
+}
+
+input[type=text]{
+    width: 100px; /*px needs to always be attached to number*/
+    margin: auto;
+    outline: none; /*what does this do?*/
+    min-height: 50px;
+    border: 2px solid rgba(243, 243, 28, 0.986);
+    padding: 10px;
+    font-size: 14px;
+}
+
+input[type=text]:focus{
+    background: whitesmoke;
+    border: 2px solid greenyellow
+}
+
+input[type=button]{
+    width: 150px;
+    margin-left: 40%;
+    margin-top: 45px;
+    outline: none; /*why have if 'none'*/
+    border: 2px solid black; /*why have if 'none'*/
+    border-radius: 2px;
+    font-family: 'Silkscreen', cursive; 
+    font-size: 22px; 
+    padding: 14px; 
+    color: lightblue;
+    background-color: rgb(4.3, 4.3, 0,0.5);
+    text-shadow: 2px 2px black;
+    box-shadow: 3px 3px 3px 1px black;
+}
+
+input[type=button]:hover{
+background-color: aqua;
+}
+
+.age{
+    display:block;
+    text-align: center;
+    margin:10px; 
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    text-shadow: 1px 1px black;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 1.5px;
+background-color: rgba(84, 84, 173, 0.8);
+    color:white;
+    padding:10px;
+}
+

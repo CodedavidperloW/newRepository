@@ -1,0 +1,58 @@
+body,html{
+    margin:0px;
+    padding:0px;
+}
+
+.navbar{display:inline-block;
+list-style-type: none;
+background-color: orange;
+width:100%;
+padding:10px;
+margin-top: -25px;
+height:40px;
+}
+
+.list{display:inline-block;
+position:relative;
+font-size: 26px;
+top:10px;
+font-family: fantasy;
+}
+
+.list2{display:inline-block;
+position:absolute;
+right:50px;
+top:8px;
+font-size:20px;
+}
+
+img{
+    width:150px;
+    margin-left:280px;
+    margin-bottom: 10px;
+}
+
+.artist{
+    position:relative;
+    left:265px;
+    top:0px;
+}
+
+.price1{position:relative;
+left:320px;
+padding-bottom: 10px;
+}
+
+.footer{
+    position:absolute;
+    width:100%;
+    background-color: orange;
+    bottom:-60px;
+    text-align: center;
+    font-family: fantasy;
+    padding-top: 5px;
+    height:20px;
+}
+
+
+

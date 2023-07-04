@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="form sign-in-form">
+                <div class="wrapper">
+                    <form action="#">
+                        <h1>Log In</h1>
+                        <p>Use your email and password to sign in</p>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit">Sign In</button>
+                    </form>
+                </div>
+            </div>
+            <div class="form sign-up-form active">
+                <div class="wrapper">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <p class="fill-in-details">Please fill in your details to create account</p>
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button class="sign-up" type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>4
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-left">
+                        <h1 class="first-h">Create Account</h1>
+                        <p class="p-one">or</p>
+                        <button id="signInButton">Log in</button>
+                    </div>
+                    <div class="overlay-right">
+                        <h1 class="second-h">Log in</h1>
+                        <p class="p-two">or</p>
+                        <button id="signUpButton">Create Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
